@@ -1,0 +1,15 @@
+2015-08-27 08:37:21 IsCreateDetailFile配置获取异常 System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 Better.Infrastructures.Log.ConfigFetcher.RefreshConfig()
+
+2015-08-27 08:38:00 IsCreateDetailFile配置获取异常 System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 Better.Infrastructures.Log.ConfigFetcher.RefreshConfig()
+
+2015-08-27 08:41:30 IsCreateDetailFile配置获取异常 System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 Better.Infrastructures.Log.ConfigFetcher.RefreshConfig()
+
+2015-08-27 08:45:03 IsCreateDetailFile配置获取异常 System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 Better.Infrastructures.Log.ConfigFetcher.RefreshConfig()
+
+2015-08-27 08:51:47 IsCreateDetailFile配置获取异常 System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 Better.Infrastructures.Log.ConfigFetcher.RefreshConfig()
+

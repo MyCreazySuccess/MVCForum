@@ -1,0 +1,254 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Better517NA.InfrastructureThread.Threading</name>
+    </assembly>
+    <members>
+        <member name="T:Better517NA.InfrastructureThread.Threading.BetterThread">
+            <summary>
+            线程抽象类
+            </summary>
+        </member>
+        <member name="F:Better517NA.InfrastructureThread.Threading.BetterThread.maxThreadCount">
+            <summary>
+            最大线程数，默认为10
+            </summary>
+        </member>
+        <member name="F:Better517NA.InfrastructureThread.Threading.BetterThread.currentThreadCount">
+            <summary>
+            当前线程数
+            </summary>
+        </member>
+        <member name="F:Better517NA.InfrastructureThread.Threading.BetterThread.thread">
+            <summary>
+            线程对象
+            </summary>
+        </member>
+        <member name="F:Better517NA.InfrastructureThread.Threading.BetterThread.sleepTimeSpan">
+            <summary>
+            线程休眠时间，默认1s
+            </summary>
+        </member>
+        <member name="F:Better517NA.InfrastructureThread.Threading.BetterThread.excuteResult">
+            <summary>
+            执行成功标志
+            </summary>
+        </member>
+        <member name="F:Better517NA.InfrastructureThread.Threading.BetterThread.excuteAction">
+            <summary>
+            线程执行委托
+            </summary>
+        </member>
+        <member name="F:Better517NA.InfrastructureThread.Threading.BetterThread.excuteSuccessAction">
+            <summary>
+            线程执行成功后的委托
+            </summary>
+        </member>
+        <member name="F:Better517NA.InfrastructureThread.Threading.BetterThread.excuteFaildAction">
+            <summary>
+            线程执行失败后的委托
+            </summary>
+        </member>
+        <member name="F:Better517NA.InfrastructureThread.Threading.BetterThread.excuteParmaAction">
+            <summary>
+            线程执行委托
+            </summary>
+        </member>
+        <member name="F:Better517NA.InfrastructureThread.Threading.BetterThread.excuteParmaSuccessAction">
+            <summary>
+            线程执行成功后的委托
+            </summary>
+        </member>
+        <member name="F:Better517NA.InfrastructureThread.Threading.BetterThread.excuteParmaFaildAction">
+            <summary>
+            线程执行失败后的委托
+            </summary>
+        </member>
+        <member name="F:Better517NA.InfrastructureThread.Threading.BetterThread.threadName">
+            <summary>
+            线程名称
+            </summary>
+        </member>
+        <member name="M:Better517NA.InfrastructureThread.Threading.BetterThread.#ctor">
+            <summary>
+            默认构造函数
+            </summary>
+        </member>
+        <member name="M:Better517NA.InfrastructureThread.Threading.BetterThread.#ctor(System.String)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="threadName">线程名称</param>
+        </member>
+        <member name="M:Better517NA.InfrastructureThread.Threading.BetterThread.ExcuteThreadInstance">
+            <summary>
+            开启普通无参数线程，或自己控制线程内的循环创建线程实例方法
+            </summary>
+        </member>
+        <member name="M:Better517NA.InfrastructureThread.Threading.BetterThread.ExcuteThreadInstance(System.Object)">
+            <summary>
+            开启有参数的线程，或自己控制线程内的循环创建线程实例方法
+            </summary>
+            <param name="threadParam">传入线程中的参数</param>
+        </member>
+        <member name="M:Better517NA.InfrastructureThread.Threading.BetterThread.ExcuteThreadInstance(System.TimeSpan)">
+            <summary>
+            开启普通无参循环线程，循环一次后睡眠时间可以设置，默认为1000ms
+            </summary>
+            <param name="sleepTimeSpan">线程睡眠时间，默认1秒钟，设置超过10毫秒才使用传入参数</param>
+        </member>
+        <member name="M:Better517NA.InfrastructureThread.Threading.BetterThread.ExcuteThreadInstance(System.Object,System.TimeSpan)">
+            <summary>
+            创建有参线程，并在线程执行方法内开启了
+            </summary>
+            <param name="threadParam">传入线程中的参数</param>
+            <param name="sleepTimeSpan">默认睡眠时间，单位毫秒</param>
+        </member>
+        <member name="M:Better517NA.InfrastructureThread.Threading.BetterThread.ExcuteThreadInstance(System.Action,System.Action,System.Action)">
+            <summary>
+            创建无参线程，使用此方法无需继承该类，具体执行方法使用委托传入进来
+            </summary>
+            <param name="excuteAction">线程执行主方法委托</param>
+            <param name="excuteSuccessAction">线程成功执行后的扩展方法委托</param>
+            <param name="excuteFaildAction">线程执行一次后的扩展方法委托</param>
+        </member>
+        <member name="M:Better517NA.InfrastructureThread.Threading.BetterThread.ExcuteThreadInstance(System.Action,System.Action,System.Action,System.TimeSpan)">
+            <summary>
+            创建无参线程，使用此方法无需继承该类，具体执行方法使用委托传入进来
+            </summary>
+            <param name="excuteAction">线程执行主方法委托</param>
+            <param name="excuteSuccessAction">线程成功执行后的扩展方法委托</param>
+            <param name="excuteFaildAction">线程执行一次后的扩展方法委托</param>
+            <param name="sleepTimeSpan">线程睡眠时间，默认1秒钟，设置超过10毫秒才使用传入参数</param>
+        </member>
+        <member name="M:Better517NA.InfrastructureThread.Threading.BetterThread.ExcuteThreadInstance(System.Action{System.Object},System.Action{System.Object},System.Action{System.Object},System.Object)">
+            <summary>
+            开启有参数的线程，或自己控制线程内的循环创建线程实例方法
+            </summary>
+            <param name="excuteAction">线程执行主方法委托</param>
+            <param name="excuteSuccessAction">线程成功执行后的扩展方法委托</param>
+            <param name="excuteFaildAction">线程执行一次后的扩展方法委托</param>
+            <param name="threadParam">传入线程中的参数</param>
+        </member>
+        <member name="M:Better517NA.InfrastructureThread.Threading.BetterThread.ExcuteThreadInstance(System.Action{System.Object},System.Action{System.Object},System.Action{System.Object},System.TimeSpan,System.Object)">
+            <summary>
+            创建有参数的线程，使用此方法无需继承该类，普通有参线程方法，或有参自己控制线程内循环的方法
+            </summary>
+            <param name="excuteAction">线程执行主方法委托</param>
+            <param name="excuteSuccessAction">线程成功执行后的扩展方法委托</param>
+            <param name="excuteFaildAction">线程执行一次后的扩展方法委托</param>
+            <param name="sleepTimeSpan">线程睡眠时间，默认1秒钟，设置超过10毫秒才使用传入参数</param>
+            <param name="threadParam">线程参数</param>
+        </member>
+        <member name="M:Better517NA.InfrastructureThread.Threading.BetterThread.StopThread">
+            <summary>
+            终止线程方法
+            </summary>
+        </member>
+        <member name="M:Better517NA.InfrastructureThread.Threading.BetterThread.ExcuteMethod">
+            <summary>
+            线程主执行方法【无传入线程参数】
+            </summary>
+        </member>
+        <member name="M:Better517NA.InfrastructureThread.Threading.BetterThread.ExcuteMethodSuccess">
+            <summary>
+            线程主执行成功后方法【无传入线程参数】
+            </summary>
+        </member>
+        <member name="M:Better517NA.InfrastructureThread.Threading.BetterThread.ExcuteMethodFaild">
+            <summary>
+            线程主执行失败后方法【无传入线程参数】
+            </summary>
+        </member>
+        <member name="M:Better517NA.InfrastructureThread.Threading.BetterThread.ExcuteMethod(System.Object)">
+            <summary>
+            线程主执行方法【有传入线程参数】
+            </summary>
+            <param name="param">线程传入参数</param>
+        </member>
+        <member name="M:Better517NA.InfrastructureThread.Threading.BetterThread.ExcuteMethodSuccess(System.Object)">
+            <summary>
+            线程主执行成功后方法【有传入线程参数】
+            </summary>
+            <param name="param">线程传入参数</param>
+        </member>
+        <member name="M:Better517NA.InfrastructureThread.Threading.BetterThread.ExcuteMethodFaild(System.Object)">
+            <summary>
+            线程主执行失败后方法【有传入线程参数】
+            </summary>
+            <param name="param">线程传入参数</param>
+        </member>
+        <member name="M:Better517NA.InfrastructureThread.Threading.BetterThread.InitThread(System.Action)">
+            <summary>
+            初始化线程方法
+            </summary>
+            <param name="excuteAction">线程执行方法</param>
+        </member>
+        <member name="M:Better517NA.InfrastructureThread.Threading.BetterThread.InitParamThread(System.Action{System.Object},System.Object)">
+            <summary>
+            初始化线程方法
+            </summary>
+            <param name="excuteAction">线程执行方法</param>
+            <param name="threadParam">线程参数</param>
+        </member>
+        <member name="M:Better517NA.InfrastructureThread.Threading.BetterThread.Excute">
+            <summary>
+            普通无参线程执行方法，或者自己控制线程内的while循环执行方法
+            </summary>
+        </member>
+        <member name="M:Better517NA.InfrastructureThread.Threading.BetterThread.ExcuteLoop">
+            <summary>
+            普通无参线程循环执行方法，这种情况无法解释线程，包括抛异常时，这种情况一般用于死循环，默认每次执行后都休眠1000ms
+            </summary>
+        </member>
+        <member name="M:Better517NA.InfrastructureThread.Threading.BetterThread.ExcuteParam(System.Object)">
+            <summary>
+            普通有参线程执行方法，或者自己控制线程内的while循环执行方法
+            </summary>
+            <param name="param">线程传入参数</param>
+        </member>
+        <member name="M:Better517NA.InfrastructureThread.Threading.BetterThread.ExcuteParamLoop(System.Object)">
+            <summary>
+            普通有参线程循环执行方法，这种情况无法解释线程，包括抛异常时，这种情况一般用于死循环，默认每次执行后都休眠1000ms
+            </summary>
+            <param name="param">线程传入参数</param>
+        </member>
+        <member name="M:Better517NA.InfrastructureThread.Threading.BetterThread.ExcuteByAction">
+            <summary>
+            通过委托的形式执行类外的方法
+            </summary>
+        </member>
+        <member name="M:Better517NA.InfrastructureThread.Threading.BetterThread.ExcuteLoopByAction">
+            <summary>
+            普通无参线程循环执行方法，这种情况无法解释线程，包括抛异常时，这种情况一般用于死循环，默认每次执行后都休眠1000ms
+            </summary>
+        </member>
+        <member name="M:Better517NA.InfrastructureThread.Threading.BetterThread.ExcuteParamByAction(System.Object)">
+            <summary>
+            普通有参线程执行方法，或者自己控制线程内的while循环执行方法
+            </summary>
+            <param name="param">线程传入参数</param>
+        </member>
+        <member name="M:Better517NA.InfrastructureThread.Threading.BetterThread.ExcuteParamLoopByAction(System.Object)">
+            <summary>
+            普通有参线程循环执行方法，这种情况无法解释线程，包括抛异常时，这种情况一般用于死循环，默认每次执行后都休眠1000ms
+            </summary>
+            <param name="param">线程传入参数</param>
+        </member>
+        <member name="M:Better517NA.InfrastructureThread.Threading.BetterThread.IsOverMaxThread">
+            <summary>
+            判断是否超过最大线程数
+            </summary>
+        </member>
+        <member name="P:Better517NA.InfrastructureThread.Threading.BetterThread.ExcuteResult">
+            <summary>
+            本次线程执行结果，若是循环线程执行方法，这个参数只是一个临时状态
+            </summary>
+        </member>
+        <member name="P:Better517NA.InfrastructureThread.Threading.BetterThread.MaxThreadCount">
+            <summary>
+            最大线程数，最大值不能超过100，默认为10
+            </summary>
+        </member>
+    </members>
+</doc>

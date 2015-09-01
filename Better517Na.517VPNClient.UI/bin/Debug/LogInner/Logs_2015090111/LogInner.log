@@ -1,0 +1,51 @@
+2015-09-01 11:48:20 IsCreateDetailFile配置获取异常 System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 Better.Infrastructures.Log.ConfigFetcher.RefreshConfig()
+
+2015-09-01 11:48:27 数据库连接配置获取异常,目标连接BusiMonitorLogConnection 异常 System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 Better.Infrastructures.Log.ConnectionFactory.GetConnectionString(String str)
+
+2015-09-01 11:48:27 连接获取异常 System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 Better.Infrastructures.Log.ConnectionFactory.GetConnectionString(String str)
+   在 Better.Infrastructures.Log.MySqlLogSink.RefreshConnStrs()
+
+2015-09-01 11:48:27 数据库连接配置获取异常,目标连接BusiMonitorLogConnection 异常 System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 Better.Infrastructures.Log.ConnectionFactory.GetConnectionString(String str)
+
+2015-09-01 11:48:27 连接获取异常 System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 Better.Infrastructures.Log.ConnectionFactory.GetConnectionString(String str)
+   在 Better.Infrastructures.Log.TextLogSink.RefreshConnStrs()
+
+2015-09-01 11:50:50 IsCreateDetailFile配置获取异常 System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 Better.Infrastructures.Log.ConfigFetcher.RefreshConfig()
+
+2015-09-01 11:50:58 数据库连接配置获取异常,目标连接BusiMonitorLogConnection 异常 System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 Better.Infrastructures.Log.ConnectionFactory.GetConnectionString(String str)
+
+2015-09-01 11:50:58 连接获取异常 System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 Better.Infrastructures.Log.ConnectionFactory.GetConnectionString(String str)
+   在 Better.Infrastructures.Log.MySqlLogSink.RefreshConnStrs()
+
+2015-09-01 11:50:58 数据库连接配置获取异常,目标连接BusiMonitorLogConnection 异常 System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 Better.Infrastructures.Log.ConnectionFactory.GetConnectionString(String str)
+
+2015-09-01 11:50:58 连接获取异常 System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 Better.Infrastructures.Log.ConnectionFactory.GetConnectionString(String str)
+   在 Better.Infrastructures.Log.TextLogSink.RefreshConnStrs()
+
+2015-09-01 11:51:27 IsCreateDetailFile配置获取异常 System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 Better.Infrastructures.Log.ConfigFetcher.RefreshConfig()
+
+2015-09-01 11:51:28 数据库连接配置获取异常,目标连接BusiMonitorLogConnection 异常 System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 Better.Infrastructures.Log.ConnectionFactory.GetConnectionString(String str)
+
+2015-09-01 11:51:28 连接获取异常 System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 Better.Infrastructures.Log.ConnectionFactory.GetConnectionString(String str)
+   在 Better.Infrastructures.Log.MySqlLogSink.RefreshConnStrs()
+
+2015-09-01 11:51:28 数据库连接配置获取异常,目标连接BusiMonitorLogConnection 异常 System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 Better.Infrastructures.Log.ConnectionFactory.GetConnectionString(String str)
+
+2015-09-01 11:51:28 连接获取异常 System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 Better.Infrastructures.Log.ConnectionFactory.GetConnectionString(String str)
+   在 Better.Infrastructures.Log.TextLogSink.RefreshConnStrs()
+

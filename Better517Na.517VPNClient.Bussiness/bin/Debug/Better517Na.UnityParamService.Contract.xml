@@ -1,0 +1,306 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Better517Na.UnityParamService.Contract</name>
+    </assembly>
+    <members>
+        <member name="T:Better517Na.UnityParamService.Contract.IUnityParamWriteContract">
+            <summary>
+            IUnityParamWriteContract接口
+            </summary>
+        </member>
+        <member name="M:Better517Na.UnityParamService.Contract.IUnityParamWriteContract.AddSysParamInfo(System.String)">
+            <summary>
+            添加参数
+            </summary>
+            <param name="jsonSysParamInfo">参数信息对象</param>
+            <returns>添加结果</returns>
+        </member>
+        <member name="M:Better517Na.UnityParamService.Contract.IUnityParamWriteContract.ModifySysParamInfo(System.String)">
+            <summary>
+            更新参数信息
+            </summary>
+            <param name="jsonSysParamInfo">更新参数对象</param>
+            <returns>更新结果</returns>
+        </member>
+        <member name="M:Better517Na.UnityParamService.Contract.IUnityParamWriteContract.ModifyParamIsValid(System.String,System.String,System.Int32)">
+            <summary>
+            更新参数信息是否启用
+            </summary>
+            <param name="updateUser">操作人员</param>
+            <param name="keyId">参数KeyID</param>
+            <param name="isValid">是否启用</param>
+            <returns>更新结果</returns>
+        </member>
+        <member name="M:Better517Na.UnityParamService.Contract.IUnityParamWriteContract.AddParamUpdateLog(System.String)">
+            <summary>
+            添加参数更新日志信息
+            </summary>
+            <param name="jsonParamUpdateLog">传入参数日志</param>
+            <returns>结果</returns>
+        </member>
+        <member name="T:Better517Na.UnityParamService.Contract.IUnityParamContract">
+            <summary>
+            接口
+            </summary>
+            <summary>
+            接口
+            </summary>
+        </member>
+        <member name="M:Better517Na.UnityParamService.Contract.IUnityParamContract.GetTaskInfoByKeyID(System.String)">
+            <summary>
+            根据keyId获取任务信息
+            </summary>
+            <param name="keyID">KeyId</param>
+            <returns>结果</returns>
+        </member>
+        <member name="M:Better517Na.UnityParamService.Contract.IUnityParamContract.AddTaskInfo(System.String)">
+            <summary>
+            添加任务
+            </summary>
+            <param name="jsonTaskInfo">任务信息对象</param>
+            <returns>添加结果</returns>
+        </member>
+        <member name="M:Better517Na.UnityParamService.Contract.IUnityParamContract.ModifyTaskParam(System.String)">
+            <summary>
+            修改任务参数
+            </summary>
+            <param name="jsonTaskInfo">系统任务Json</param>
+            <returns>返回值</returns>
+        </member>
+        <member name="M:Better517Na.UnityParamService.Contract.IUnityParamContract.SetWatchIsEnable(System.String,System.Boolean)">
+            <summary>
+            启用禁用
+            </summary>
+            <param name="keyID">KeyId</param>
+            <param name="isEnable">是否启用</param>
+            <returns>结果</returns>
+        </member>
+        <member name="M:Better517Na.UnityParamService.Contract.IUnityParamContract.GetSpecifyParamInfo(System.String,System.String,System.String)">
+            <summary>
+            获取指定参数信息
+            </summary>
+            <param name="paraProduct">产品线</param>
+            <param name="paraBusiName">业务线</param>
+            <param name="paraName">参数名</param>
+            <returns>MODEL</returns>
+        </member>
+        <member name="M:Better517Na.UnityParamService.Contract.IUnityParamContract.GetAllParamInfo(System.String,System.String)">
+            <summary>
+            获取指定业务参数列表
+            </summary>
+            <param name="paraProduct">产品线</param>
+            <param name="paraBusiName">业务线</param>
+            <returns>JSON</returns>
+        </member>
+        <member name="M:Better517Na.UnityParamService.Contract.IUnityParamContract.ModifyParam(System.String)">
+            <summary>
+            修改系统参数
+            </summary>
+            <param name="sysParamInfo">系统参数Json</param>
+            <returns>返回值</returns>
+        </member>
+        <member name="M:Better517Na.UnityParamService.Contract.IUnityParamContract.GetParamInfoByKeyID(System.String)">
+            <summary>
+            根据keyId获取参数信息
+            </summary>
+            <param name="keyID">KeyId</param>
+            <returns>结果</returns>
+        </member>
+        <member name="M:Better517Na.UnityParamService.Contract.IUnityParamContract.SetIsEnable(System.String,System.Boolean)">
+            <summary>
+            启用禁用
+            </summary>
+            <param name="keyID">KeyId</param>
+            <param name="isEnable">是否启用</param>
+            <returns>结果</returns>
+        </member>
+        <member name="M:Better517Na.UnityParamService.Contract.IUnityParamContract.GetSysParamInfoList">
+            <summary>
+            获取参数列表
+            </summary>
+            <returns>参数列表</returns>
+        </member>
+        <member name="M:Better517Na.UnityParamService.Contract.IUnityParamContract.GetSysParamInfo(System.String)">
+            <summary>
+            通过KeyID获取一个参数信息
+            </summary>
+            <param name="keyId">keyId</param>
+            <returns>参数信息</returns>
+        </member>
+        <member name="M:Better517Na.UnityParamService.Contract.IUnityParamContract.GetSysParamInfoListByPrefix(System.String)">
+            <summary>
+            根据参数前缀获取参数列表
+            </summary>
+            <param name="paraId">参数ID</param>
+            <returns>参数信息</returns>
+        </member>
+        <member name="M:Better517Na.UnityParamService.Contract.IUnityParamContract.GetSysParamInfoByParaId(System.String)">
+            <summary>
+            根据ParaId获取一个参数信息
+            </summary>
+            <param name="paraId">参数ID</param>
+            <returns>参数信息</returns>
+        </member>
+        <member name="M:Better517Na.UnityParamService.Contract.IUnityParamContract.AddSystemParamInfo(System.String)">
+            <summary>
+            添加参数
+            </summary>
+            <param name="json">json</param>
+            <returns>是否成功</returns>
+        </member>
+        <member name="M:Better517Na.UnityParamService.Contract.IUnityParamContract.GetSysParamBykeyid(System.String)">
+            <summary>
+            通过keyid获取单条用户参数（用于修改）
+            </summary>
+            <param name="keyId">keyid</param>
+            <returns>用户参数</returns>
+        </member>
+        <member name="M:Better517Na.UnityParamService.Contract.IUnityParamContract.ModifySysParamIsValid(System.String,System.String,System.Int32)">
+            <summary>
+            更新参数信息是否启用
+            </summary>
+            <param name="updateUser">操作人员</param>
+            <param name="keyId">参数KeyID</param>
+            <param name="isValid">是否启用</param>
+            <returns>更新结果</returns>
+        </member>
+        <member name="M:Better517Na.UnityParamService.Contract.IUnityParamContract.ModifySysParamInfo(System.String)">
+            <summary>
+            修改参数
+            </summary>
+            <param name="json">json</param>
+            <returns>是否成功</returns>
+        </member>
+        <member name="M:Better517Na.UnityParamService.Contract.IUnityParamContract.AddDicIndexUpdateLog(System.String)">
+            <summary>
+            添加参数更新日志信息
+            </summary>
+            <param name="jsonDicIndexUpdateLog">传入参数日志</param>
+            <returns>结果</returns>
+        </member>
+        <member name="M:Better517Na.UnityParamService.Contract.IUnityParamContract.AddDicIndexParamInfo(System.String)">
+            <summary>
+            添加参数
+            </summary>
+            <param name="jsonDicIndexInfo">json</param>
+            <returns>是否成功</returns>
+        </member>
+        <member name="M:Better517Na.UnityParamService.Contract.IUnityParamContract.GetDicIndexs(System.String,System.String)">
+            <summary>
+            获取字典index参数
+            </summary>
+            <param name="paraProID">产品线ID</param>
+            <param name="paraBusiID">业务组ID</param>
+            <returns>字典index参数</returns>
+        </member>
+        <member name="M:Better517Na.UnityParamService.Contract.IUnityParamContract.GetDicIndexBykeyid(System.String)">
+            <summary>
+            根据keyid取数据
+            </summary>
+            <param name="keyId">keyid</param>
+            <returns>model</returns>
+        </member>
+        <member name="M:Better517Na.UnityParamService.Contract.IUnityParamContract.AddDicItemInfo(System.String)">
+            <summary>
+            添加参数
+            </summary>
+            <param name="jsonDicItemInfo">json</param>
+            <returns>是否成功</returns>
+        </member>
+        <member name="M:Better517Na.UnityParamService.Contract.IUnityParamContract.ModifyDicItemInfo(System.String)">
+            <summary>
+            修改参数
+            </summary>
+            <param name="jsonDicItemInfo">json</param>
+            <returns>是否成功</returns>
+        </member>
+        <member name="M:Better517Na.UnityParamService.Contract.IUnityParamContract.ModifyDicItemIsValid(System.String,System.String,System.Int32)">
+            <summary>
+            更新参数信息是否启用
+            </summary>
+            <param name="updateUser">操作人员</param>
+            <param name="keyId">参数KeyID</param>
+            <param name="isValid">是否启用</param>
+            <returns>更新结果</returns>
+        </member>
+        <member name="M:Better517Na.UnityParamService.Contract.IUnityParamContract.GetDicItemBykeyid(System.String)">
+            <summary>
+            通过keyid获取单条字典参数（用于修改）
+            </summary>
+            <param name="keyId">keyid</param>
+            <returns>用户参数</returns>
+        </member>
+        <member name="M:Better517Na.UnityParamService.Contract.IUnityParamContract.GetDicInfoByDicId(System.String,System.String,System.String)">
+            <summary>
+            获取字典item参数
+            </summary>
+            <param name="paraProID">产品线ID</param>
+            <param name="paraBusiID">业务组ID</param>
+            <param name="dicId">字典ID</param>
+            <returns>字典item参数</returns>
+        </member>
+        <member name="M:Better517Na.UnityParamService.Contract.IUnityParamContract.AddUserParamInfo(System.String)">
+            <summary>
+            添加参数
+            </summary>
+            <param name="jsonUserInfo">json</param>
+            <returns>是否成功</returns>
+        </member>
+        <member name="M:Better517Na.UnityParamService.Contract.IUnityParamContract.ModifyUserParamInfo(System.String)">
+            <summary>
+            修改参数
+            </summary>
+            <param name="jsonUserInfo">json</param>
+            <returns>是否成功</returns>
+        </member>
+        <member name="M:Better517Na.UnityParamService.Contract.IUnityParamContract.ModifyUserParamIsValid(System.String,System.String,System.Int32,System.String)">
+            <summary>
+            更新参数信息是否启用
+            </summary>
+            <param name="updateUser">操作人员</param>
+            <param name="keyId">参数KeyID</param>
+            <param name="isValid">是否启用</param>
+            <param name="departId">部门id</param>
+            <returns>更新结果</returns>
+        </member>
+        <member name="M:Better517Na.UnityParamService.Contract.IUnityParamContract.GetUserParamBykeyid(System.String,System.String)">
+            <summary>
+            通过keyid获取单条用户参数（用于修改）
+            </summary>
+            <param name="keyId">keyid</param>
+            <param name="departId">部门ID</param>
+            <returns>用户参数</returns>
+        </member>
+        <member name="M:Better517Na.UnityParamService.Contract.IUnityParamContract.GetUserParamFromCache(System.String,System.String)">
+            <summary>
+            获取redis缓存用户参数信息
+            </summary>
+            <param name="paraId">参数ID</param>
+            <param name="deptId">部门ID</param>
+            <returns>用户参数信息</returns>
+        </member>
+        <member name="M:Better517Na.UnityParamService.Contract.IUnityParamContract.GetUserParamListFromCache(System.Collections.Generic.List{System.String},System.String)">
+            <summary>
+            批量获取redis缓存用户参数信息
+            </summary>
+            <param name="paraIds">参数ID列表</param>
+            <param name="deptId">部门ID</param>
+            <returns>用户参数信息</returns>
+        </member>
+        <member name="M:Better517Na.UnityParamService.Contract.IUnityParamContract.GetUserParamList(System.String)">
+            <summary>
+            获取所有部门指定参数用户参数信息
+            </summary>
+            <param name="paraId">参数ID</param>
+            <returns>用户参数信息</returns>
+        </member>
+        <member name="M:Better517Na.UnityParamService.Contract.IUnityParamContract.GetUserParamListFromCacheByParaId(System.String)">
+            <summary>
+            获取所有部门指定参数的redis缓存用户参数信息
+            </summary>
+            <param name="paraId">参数ID</param>
+            <returns>用户参数信息</returns>
+        </member>
+    </members>
+</doc>
